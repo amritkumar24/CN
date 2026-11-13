@@ -1,1 +1,86 @@
-<!-- Alarm Clock Project -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Alarm Clock</h1>
+
+        <!-- Live Clock Section -->
+        <section class="clock-section">
+            <h2>Current Time</h2>
+
+            <div class="clock">
+                <span id="hours">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span>
+                <span id="ampm">AM</span>
+            </div>
+        </section>
+
+        <!-- Set Alarm Section -->
+        <section class="alarm-section">
+            <h2>Set Alarm</h2>
+
+            <div class="alarm-inputs">
+
+                <input
+                    type="number"
+                    id="alarm-hours"
+                    min="1"
+                    max="12"
+                    placeholder="HH"
+                >
+
+                <input
+                    type="number"
+                    id="alarm-minutes"
+                    min="0"
+                    max="59"
+                    placeholder="MM"
+                >
+
+                <input
+                    type="number"
+                    id="alarm-seconds"
+                    min="0"
+                    max="59"
+                    placeholder="SS"
+                >
+
+                <select id="alarm-ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+
+            </div>
+
+            <button id="set-alarm-btn">
+                Set Alarm
+            </button>
+
+        </section>
+
+        <!-- Alarm List Section -->
+        <section class="alarm-list-section">
+            <h2>My Alarms</h2>
+
+            <div id="alarm-list"></div>
+
+            <p id="empty-message">
+                No alarms set yet.
+            </p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

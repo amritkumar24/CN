@@ -1,0 +1,211 @@
+
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    color: #333333;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Live Clock */
+.clock,
+.clock-display,
+#clock {
+    background: #f3f4f6;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #4f46e5;
+    letter-spacing: 1px;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 22px;
+    color: #333333;
+    margin: 25px 0 15px;
+}
+
+/* Alarm Input Section */
+.alarm-form,
+.alarm-inputs,
+.set-alarm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input,
+select {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    max-width: 100%;
+    width: 75px;
+    text-align: center;
+    background: #ffffff;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+/* Set Alarm Button */
+#set-alarm,
+#setAlarm,
+.set-alarm-btn {
+    margin: 15px 0;
+    background: #16a34a;
+}
+
+#set-alarm:hover,
+#setAlarm:hover,
+.set-alarm-btn:hover {
+    background: #15803d;
+}
+
+/* Alarm List */
+#alarm-list,
+#alarmList,
+.alarm-list {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+/* Individual Alarm */
+.alarm-item,
+#alarm-list li,
+#alarmList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #f3f4f6;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Delete Buttons */
+.delete-btn,
+.delete-button {
+    background: #ef4444;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.delete-btn:hover,
+.delete-button:hover {
+    background: #dc2626;
+}
+
+/* Empty List Message */
+#empty-message,
+#emptyMessage,
+.empty-message {
+    color: #777777;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .clock,
+    .clock-display,
+    #clock {
+        font-size: 26px;
+        padding: 15px 5px;
+    }
+
+    input,
+    select {
+        width: 65px;
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .alarm-item,
+    #alarm-list li,
+    #alarmList li {
+        font-size: 14px;
+    }
+}
+
+
+/* Set Alarm Button*/
+#set-alarm-btn {
+    margin: 15px 0;
+    background: #16a34a;
+}
+
+#set-alarm-btn:hover {
+    background: #15803d;
+}
+

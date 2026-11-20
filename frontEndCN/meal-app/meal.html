@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meal Details | Meal App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+
+            <a class="brand" href="index.html">
+                <span class="brand-mark">M</span>
+                Meal App
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="favourites.html">My Favourites</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Meal Details Section -->
+    <main class="container inner-page">
+
+        <a class="back-link" href="index.html">
+            ← Back to search
+        </a>
+
+        <!-- Loading or error message -->
+        <p id="message" class="message" role="status" aria-live="polite">
+            Loading meal details...
+        </p>
+
+        <!-- Meal details will appear here -->
+        <div id="meal-details"></div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            Meal App <span> · </span> Recipes from TheMealDB
+        </div>
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="meal.js"></script>
+
+</body>
+</html>

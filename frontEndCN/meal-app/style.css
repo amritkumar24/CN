@@ -1,0 +1,374 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Header and Navigation */
+
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav {
+    min-height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand-mark {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #4caf50;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+    color: #388e3c;
+}
+
+
+/* Home Page */
+
+.hero {
+    background-color: #e8f5e9;
+}
+
+.hero-content {
+    padding: 40px 0;
+}
+
+.eyebrow {
+    color: #388e3c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+h1 span {
+    color: #388e3c;
+}
+
+.hero-description,
+.page-description {
+    color: #666;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+
+/* Search Box */
+
+.search-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+.search-box span {
+    color: #666;
+    font-size: 24px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box:focus-within {
+    outline: 2px solid #388e3c;
+}
+
+
+/* Meal Results */
+
+.results-section {
+    padding: 30px 0 50px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+/* Meal Cards */
+
+.meal-card {
+    min-width: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.meal-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.meal-link img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.meal-link h3 {
+    margin: 0;
+    padding: 15px 15px 0;
+    font-size: 18px;
+}
+
+.card-actions {
+    padding: 15px;
+}
+
+
+/* Buttons */
+
+.button {
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #388e3c;
+}
+
+.button:disabled {
+    color: #555;
+    background-color: #ddd;
+    cursor: default;
+}
+
+.button-remove {
+    background-color: #d9534f;
+}
+
+.button-remove:hover {
+    background-color: #b52b27;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #388e3c;
+    outline-offset: 2px;
+}
+
+
+/* Messages and Other Pages */
+
+.message {
+    padding: 20px 0;
+    color: #666;
+}
+
+.inner-page {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.page-title {
+    font-size: 32px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #388e3c;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Meal Details Page */
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.detail-image {
+    display: block;
+    width: 100%;
+}
+
+.detail-title {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.detail-meta {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.instructions {
+    color: #555;
+    white-space: pre-line;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px 0;
+    color: #777;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+/* Mobile Screens */
+
+@media (max-width: 600px) {
+    .nav {
+        min-height: 60px;
+    }
+
+    .brand {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero-content {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .section-heading p {
+        display: none;
+    }
+
+    .meal-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 12px;
+    }
+
+    .meal-link h3 {
+        padding: 10px 10px 0;
+        font-size: 16px;
+    }
+
+    .card-actions {
+        padding: 10px;
+    }
+
+    .detail-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .inner-page {
+        padding-top: 30px;
+    }
+}

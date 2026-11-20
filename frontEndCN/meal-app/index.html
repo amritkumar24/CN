@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search for meals and save your favourites.">
+
+    <title>Meal App | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+
+            <a class="brand" href="index.html">
+                <span class="brand-mark">M</span>
+                Meal App
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="favourites.html">My Favourites</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Search Section -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <p class="eyebrow">A LITTLE INSPIRATION FOR YOUR PLATE</p>
+
+                <h1>
+                    Find your next<br>
+                    <span>favourite meal.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Search for something delicious, explore the recipe,
+                    and save the meals you love.
+                </p>
+
+                <label class="search-label" for="search-input">
+                    Search meals
+                </label>
+
+                <div class="search-box">
+                    <span aria-hidden="true">⌕</span>
+
+                    <input
+                        id="search-input"
+                        type="search"
+                        placeholder="Try chicken, pasta, or curry..."
+                        autocomplete="off"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Search Results Section -->
+        <section class="container results-section" aria-labelledby="results-heading">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EXPLORE RECIPES</p>
+                    <h2 id="results-heading">Search results</h2>
+                </div>
+
+                <p>Made for curious appetites.</p>
+            </div>
+
+            <!-- Search status or error message -->
+            <p id="message" class="message" role="status" aria-live="polite">
+                Start typing to discover meals.
+            </p>
+
+            <!-- Search results will appear here -->
+            <div id="meal-container" class="meal-grid"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            Meal App <span> · </span> Recipes from TheMealDB
+        </div>
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

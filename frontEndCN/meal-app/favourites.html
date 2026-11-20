@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Favourite Meals | Meal App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+
+            <a class="brand" href="index.html">
+                <span class="brand-mark">M</span>
+                Meal App
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="favourites.html" aria-current="page">
+                    My Favourites
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Favourite Meals Section -->
+    <main class="container inner-page">
+
+        <p class="eyebrow">YOUR PERSONAL COLLECTION</p>
+
+        <h1 class="page-title">
+            My Favourite Meals<span>.</span>
+        </h1>
+
+        <p class="page-description">
+            All the meals you love, saved in one place.
+        </p>
+
+        <!-- Message shown when needed -->
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+
+        <!-- Favourite meals will appear here -->
+        <div id="meal-container" class="meal-grid"></div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            Meal App <span> · </span> Recipes from TheMealDB
+        </div>
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="favourites.js"></script>
+
+</body>
+</html>
